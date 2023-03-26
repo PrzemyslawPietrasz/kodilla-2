@@ -1,8 +1,9 @@
 package com.kodilla.spring.portfolio;
 
 
+
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
@@ -25,6 +26,7 @@ public class BoardTestSuite {
         board.getToDoList().addTask(taskToDo);
         board.getInProgressList().addTask(taskInProgress);
         board.getDoneList().addTask(taskDone);
+
 
         //Then
         Assert.assertEquals("task to do", board.getToDoList().getTasks().get(0));
